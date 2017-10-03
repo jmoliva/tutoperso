@@ -37,6 +37,6 @@ kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.20
 ```
 1. Mettre à jour la configuration Kubernetes pour utiliser la commande ```kubectl``` sur le cluster
 ```
-bx cs cluster-config JMOcluster
+bx cs cluster-config <cluster-name>
 ```
 ## Création des volumes persistants de stockage pour la base et pour Vtiger
