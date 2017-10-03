@@ -49,11 +49,11 @@ Se loguer sur le service de registry de Bluemix
 ```
 bx cr login
 ```
-Vérifier si vous avez déjà défini un namespace dans la registry Bluemix
+Vérifier si vous avez déjà définie un namespace dans la registry Bluemix
 ```
 bx cr namespace-list
 ```
-Si vous n'aviez pas déjà créé un namespace (la liste est vide), définissez le maintenant
+Si vous n'aviez pas déjà, créé un namespace (la liste est vide), définissez le maintenant
 ```
 bx cr namespace-add <your-namespace>
 ```
