@@ -42,7 +42,7 @@ Mettre à jour la configuration Kubernetes pour utiliser la commande ```kubectl`
 ```
 bx cs cluster-config <cluster-name>
 ```
-### Vérification ou création de nom dans la registry Bluemix
+### Vérification ou création de votre namespace dans la registry Bluemix
 Vérifier si vous avez déjà défini un namespace dans la registry Bluemix
 ```
 bx cr namespace-list
