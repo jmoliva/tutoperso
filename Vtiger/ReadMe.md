@@ -5,9 +5,9 @@ Déploiement d'une image VTiger sur l'environnement Bluemix
 - Les commandes `bx cr` font appel au plugin **Container Regitry** de Bluemix
 
 ## 1. Création du cluster kubernetes
-### Connexion à Bluemix
+### 1.1 Connexion à Bluemix
 Se connecter à Bluemix en ligne de commande (sous windows dans le ```Docker QuickStart Terminal```) et sélectionner une organisation et un espace
-### Création du Cluster Kubernetes
+### 1.2 Création du Cluster Kubernetes
 Créer le cluster kubernetes si vous n'en avait pas déjà une (si la commande `bx cs clusters` ne vous retourne aucun cluster)
 ```
 bx cs cluster-create --name <cluster-name>
@@ -39,12 +39,12 @@ kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.20
 ID                                                 Public IP         Private IP     Machine Type   State    Status   Version
 kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.206   free           normal   Ready    1.7.4_1502
 ```
-### Récupération de la configuration Kubernetes
+### 1.3 Récupération de la configuration Kubernetes
 Mettre à jour la configuration Kubernetes pour utiliser la commande ```kubectl``` sur le cluster
 ```
 bx cs cluster-config <cluster-name>
 ```
-### Vérification ou création de votre namespace dans la registry Bluemix
+### 1.4 Vérification ou création de votre namespace dans la registry Bluemix
 Se loguer sur le service de registry de Bluemix
 ```
 bx cr login
@@ -57,7 +57,7 @@ Si vous n'aviez pas déjà créé un namespace (la liste est vide), définissez 
 ```
 bx cr namespace-add <your-namespace>
 ```
-## Récupération et push de l'image Vtiger
+## 2. Récupération et push de l'image Vtiger
 On récupère une image docker de la dernière version de VTiger 7.0.1 sur DockerHub <https://hub.docker.com/r/ldavid/vtiger7/>
 ```
 docker pull ldavid/vtiger7
@@ -81,4 +81,4 @@ Liste des images...
 REFERENTIEL                                   ESPACE DE NOM   ETIQUETTE   CONDENSE       CREE           TAILLE   STATUT DE VULNERABILITE
 registry.ng.bluemix.net/<your-namespace>/vitger7   <your-namespace>     1           dc6492210a9b   3 months ago   230 MB   Vulnérable
 ```
-## Création des volumes persistants de stockage pour la base et pour Vtiger
+## 3. Création des volumes persistants de stockage pour la base et pour Vtiger
