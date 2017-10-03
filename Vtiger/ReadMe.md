@@ -1,5 +1,5 @@
 
-### Installer VTiger sur Bluemix avec Docker/Kubernetes
+# Installer VTiger sur Bluemix avec Docker/Kubernetes
 Déploiement d'une image VTiger sur l'environnement Bluemix
 
 ### Création du cluster kubernetes
