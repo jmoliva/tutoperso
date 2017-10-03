@@ -3,7 +3,7 @@
 Déploiement d'une image VTiger sur l'environnement Bluemix
 
 ## Création du cluster kubernetes
-1. Se connecter à Bluemix en ligne de commande et sélectionner une organisation et un espace
+1. Se connecter à Bluemix en ligne de commande (sous windows dans le ```Docker QuickStart Terminal``` et sélectionner une organisation et un espace
 1. Créer le cluster kubernetes
 ```
 bx cs cluster-create --name <cluster-name>
@@ -34,5 +34,9 @@ kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.20
 
 ID                                                 Public IP         Private IP     Machine Type   State    Status   Version
 kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.206   free           normal   Ready    1.7.4_1502
+```
+1. Mettre à jour la configuration Kubernetes pour utiliser la commande ```kubectl``` sur le cluster
+```
+bx cs cluster-config JMOcluster
 ```
 ## Création des volumes persistants de stockage pour la base et pour Vtiger
