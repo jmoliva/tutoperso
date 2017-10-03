@@ -16,7 +16,7 @@ Name         ID                                 State       Created          Wor
 ```
 Attendre que le cluster soit provisionné. La commande `bs workers` permet de lister l'état du cluster et des workers nodes :
 ```
-bx cs workers JMOcluster
+bx cs workers <cluster-name>
 ```
 Les différentes sorties sont:
 ```
