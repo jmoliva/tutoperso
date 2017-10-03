@@ -64,6 +64,17 @@ docker tag ldavid/vtiger7 registry.ng.bluemix.net/<your-namespace>/vitger7:1
 ```
 Une fois taguée, l'image peut être poussée dans la registry
 ```
-docker push registry.ng.bluemix.net/jmoregistry/vitger7:1
+docker push registry.ng.bluemix.net/<your-namespace>/vitger7:1
+```
+à ce moment là l'image est disponible dans Bluemix
+```
+bx cr images
+```
+Output :
+```
+Liste des images...
+
+REFERENTIEL                                   ESPACE DE NOM   ETIQUETTE   CONDENSE       CREE           TAILLE   STATUT DE VULNERABILITE
+registry.ng.bluemix.net/<your-namespace>/vitger7   <your-namespace>     1           dc6492210a9b   3 months ago   230 MB   Vulnérable
 ```
 ## Création des volumes persistants de stockage pour la base et pour Vtiger
