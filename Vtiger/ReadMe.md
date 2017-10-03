@@ -31,5 +31,9 @@ kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.20
 
 ID                                                 Public IP         Private IP     Machine Type   State      Status                         Version
 kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.206   free           deployed   Deploy Automation Successful   1.7.4_1502
+
+OK
+ID                                                 Public IP         Private IP     Machine Type   State    Status   Version
+kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.206   free           normal   Ready    1.7.4_1502
 ```
 ## Création des volumes persistants de stockage pour la base et pour Vtiger
