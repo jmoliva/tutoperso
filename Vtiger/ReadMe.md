@@ -51,5 +51,10 @@ Si vous n'aviez pas déjà créé un namespace (la liste est vide), définissez 
 ```
 bx cr namespace-add <your-namespace>
 ```
+## Récupération de l'image
+On récupère l'image docker de la dernière version de VTiger 7.0.1 sur DockerHub <https://hub.docker.com/r/ldavid/vtiger7/>
+```
+docker pull ldavid/vtiger7
+```
 
 ## Création des volumes persistants de stockage pour la base et pour Vtiger
