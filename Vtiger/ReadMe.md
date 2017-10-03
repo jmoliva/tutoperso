@@ -42,4 +42,14 @@ Mettre à jour la configuration Kubernetes pour utiliser la commande ```kubectl`
 ```
 bx cs cluster-config <cluster-name>
 ```
+### Vérification ou création de nom dans la registry Bluemix
+Vérifier si vous avez déjà défini un namespace dans la registry Bluemix
+```
+bx cr namespace-list
+```
+Si vous n'aviez pas déjà créé un namespace, définissez le maintenant
+```
+bx cr namespace-add <your-namespace>
+```
+
 ## Création des volumes persistants de stockage pour la base et pour Vtiger
