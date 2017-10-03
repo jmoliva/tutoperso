@@ -47,7 +47,7 @@ Vérifier si vous avez déjà défini un namespace dans la registry Bluemix
 ```
 bx cr namespace-list
 ```
-Si vous n'aviez pas déjà créé un namespace, définissez le maintenant
+Si vous n'aviez pas déjà créé un namespace (la liste est vide), définissez le maintenant
 ```
 bx cr namespace-add <your-namespace>
 ```
