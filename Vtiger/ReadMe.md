@@ -4,9 +4,8 @@ Déploiement d'une image VTiger sur l'environnement Bluemix
 
 1. Se connecter à Bluemix
 1. Créer un cluster kubernetes :
-bx cs cluster-create --name JMOcluster
 ```
-bx cs clusters
+bx cs cluster-create --name JMOcluster
 ```
 Output:
 ```
