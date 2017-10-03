@@ -2,7 +2,7 @@
 # Installer VTiger sur Bluemix avec Docker/Kubernetes
 Déploiement d'une image VTiger sur l'environnement Bluemix
 
-### Création du cluster kubernetes
+## Création du cluster kubernetes
 1. Se connecter à Bluemix en ligne de commande et sélectionner une organisation et un espace
 1. Créer le cluster kubernetes
 ```
@@ -32,4 +32,4 @@ kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.20
 ID                                                 Public IP         Private IP     Machine Type   State      Status                         Version
 kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.206   free           deployed   Deploy Automation Successful   1.7.4_1502
 ```
-### Création des volumes persistants de stockage pour la base et pour Vtiger
+## Création des volumes persistants de stockage pour la base et pour Vtiger
