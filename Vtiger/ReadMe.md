@@ -14,7 +14,7 @@ OK
 Name         ID                                 State       Created          Workers   Datacenter   Version
 <cluster-name>   ab68df3d7c8045e097651e33fd544731   deploying   11 seconds ago   0         hou02        1.7.4_1502
 ```
-Attendre que le cluster soit provisionné. La commande **bs workers** permet de lister l'état du cluster et des workers nodes :
+Attendre que le cluster soit provisionné. La commande `bs workers` permet de lister l'état du cluster et des workers nodes :
 ```
 bx cs workers JMOcluster
 ```
