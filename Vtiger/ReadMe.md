@@ -51,10 +51,17 @@ Si vous n'aviez pas déjà créé un namespace (la liste est vide), définissez 
 ```
 bx cr namespace-add <your-namespace>
 ```
-## Récupération de l'image
+## Récupération et push de l'image Vtiger
 On récupère une image docker de la dernière version de VTiger 7.0.1 sur DockerHub <https://hub.docker.com/r/ldavid/vtiger7/>
 ```
 docker pull ldavid/vtiger7
 ```
-
+Une fois l'image récupérée, on va la taguée dans la registry Bluemix
+```
+docker tag ldavid/vtiger7 registry.ng.bluemix.net/<your-namespace>/vitger7:1
+```
+Une fois taguée, l'image peut être poussée dans la registry
+```
+docker push registry.ng.bluemix.net/jmoregistry/vitger7:1
+```
 ## Création des volumes persistants de stockage pour la base et pour Vtiger
