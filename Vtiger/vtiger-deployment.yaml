@@ -1,0 +1,11 @@
+    spec:
+      containers:
+      - image: registry.ng.bluemix.net/jmoregistry/vitger7:1
+        name: vitger
+        env:
+        - name: WORDPRESS_DB_HOST
+          value: hanno.db.elephantsql.com:5432
+        - name: WORDPRESS_DB_USER
+          value: kabfncal
+        - name: WORDPRESS_DB_PASSWORD
+          value: HHKqEc93Wuk568ACDA1kPisCncTB6FcE
