@@ -82,3 +82,9 @@ REFERENTIEL                                   ESPACE DE NOM   ETIQUETTE   CONDEN
 registry.ng.bluemix.net/<your-namespace>/vitger7   <your-namespace>     1           dc6492210a9b   3 months ago   230 MB   Vulnérable
 ```
 ## 3. Création des volumes persistants de stockage pour la base et pour Vtiger
+
+## 4. Création d'une base compose MySQL
+Provisionner le service **Compose for MySQL** à partir de la page du catalogue de Bluemix ici : <https://console.bluemix.net/catalog/services/compose-for-mysql>
+
+![2017-10-04 20_38_44-Error - IBM Bluemix.png]({{site.baseurl}}/Vtiger/2017-10-04 20_38_44-Error - IBM Bluemix.png)
+
