@@ -4,6 +4,13 @@ Déploiement d'une image VTiger sur l'environnement Bluemix
 - Les commandes `bx cs` font appel au plugin **Container Service** de Bluemix
 - Les commandes `bx cr` font appel au plugin **Container Regitry** de Bluemix
 
+## Pre-requis
+
++ Avoir un [Bluemix IBM id](https://bluemix.net)
++ Installer la [Bluemix CLI](http://clis.ng.bluemix.net)
++ Installer docker for [Mac](https://docs.docker.com/engine/installation/mac/) or [Windows](https://docs.docker.com/engine/installation/windows/)
++ Installer [Kubectl](https://kubernetes.io/docs/user-guide/prereqs/)
+
 ## 1. Création du cluster kubernetes
 ### 1.1 Connexion à Bluemix
 Se connecter à Bluemix en ligne de commande (sous windows dans le ```Docker QuickStart Terminal```) et sélectionner une organisation et un espace
