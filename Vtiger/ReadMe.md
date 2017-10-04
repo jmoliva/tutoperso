@@ -87,11 +87,7 @@ registry.ng.bluemix.net/<your-namespace>/vitger7   <your-namespace>     1       
 Provisionner le service **Compose for MySQL** à partir de la page du catalogue de Bluemix ici : <https://console.bluemix.net/catalog/services/compose-for-mysql>
 
 image png
-![Test.png]({{site.baseurl}}/Vtiger/Test.png)
-
-
-image jpg 
-![Test.jpg]({{site.baseurl}}/Vtiger/Test.jpg)
+![](./images/Test.png)
 
 
 
