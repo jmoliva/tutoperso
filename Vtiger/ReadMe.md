@@ -64,7 +64,7 @@ docker pull ldavid/vtiger7
 ```
 Une fois l'image récupérée, on va la taguée dans la registry Bluemix
 ```
-docker tag ldavid/vtiger7 registry.ng.bluemix.net/<your-namespace>/vitger7:1
+docker tag ldavid/vtiger7 registry.ng.bluemix.net/<your-namespace>/vtiger7:1
 ```
 Une fois taguée, l'image peut être poussée dans la registry
 ```
