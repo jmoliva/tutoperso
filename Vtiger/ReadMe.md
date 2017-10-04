@@ -86,6 +86,12 @@ registry.ng.bluemix.net/<your-namespace>/vitger7   <your-namespace>     1       
 ## 4. Création d'une base compose MySQL
 Provisionner le service **Compose for MySQL** à partir de la page du catalogue de Bluemix ici : <https://console.bluemix.net/catalog/services/compose-for-mysql>
 
-![2017-10-04 20_38_44-Error - IBM Bluemix.png]({{site.baseurl}}/Vtiger/2017-10-04 20_38_44-Error - IBM Bluemix.png)
+image png
+![Test.png]({{site.baseurl}}/Vtiger/Test.png)
+
+
+image jpg 
+![Test.jpg]({{site.baseurl}}/Vtiger/Test.jpg)
+
 
 
