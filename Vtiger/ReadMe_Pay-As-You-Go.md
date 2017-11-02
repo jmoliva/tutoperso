@@ -57,32 +57,31 @@ Bluemix     https://plugins.ng.bluemix.net
 
 
 3. Il faut ensuite installer les plugins container-registry et container-service:
+Le plugin container-registry permet de vous connecter à une registry privée d'images dans Bluemix.
+Le plugin container-service vous permet de gérer les clusters et les workers nodes dans Bluemix.
 
 ```
 bx plugin install container-service -r Bluemix
 bx plugin install container-registry -r Bluemix
 ```
-
-To manage a private image registry, install the Registry plug-in. This plug-in connects to a private image registry Bluemix, where you can store images that can be used to build containers. The prefix for running registry commands is bx cr.
-
-
-
-To verify that the plug-in is installed properly, run the following command:
-
+Pour vérifier que tout est correctement installé, exécuter cette commande :
+```
 bx plugin list
-
-and both plug-ins are displayed in the results:
-
+```
+Résultat : 
+```
 Listing installed plug-ins...
 
 Plugin Name          Version
-container-registry   0.1.104
-container-service    0.1.219
+container-registry   0.1.215
+container-service    0.1.360
+```
 
-To update the container registry plugin
-
+4. Pour mettre à jour les plugins (si ils existaient déjà) utilisez ces commandes :
+```
 bx plugin update container-registry -r Bluemix
-
+bx plugin update registry-service -r Bluemix
+```
 
 Mettre à jour la configuration Kubernetes pour pouvoir utiliser la commande ```kubectl``` sur le cluster
 ```
