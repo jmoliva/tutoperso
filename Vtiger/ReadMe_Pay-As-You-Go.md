@@ -1,19 +1,19 @@
 
 # Installer VTiger sur Bluemix avec Docker/Kubernetes
-Déploiement d'une image VTiger sur l'environnement Bluemix
+Déploiement d'une image VTiger sur l'environnement Bluemix en utilisant un plan Pay As You Go.
 - Les commandes `bx cs` font appel au plugin **Container Service** de Bluemix
 - Les commandes `bx cr` font appel au plugin **Container Regitry** de Bluemix
 
 ## Pre-requis
 
-+ Avoir un [Bluemix IBM id](https://bluemix.net)
++ Avoir un [Bluemix IBM id](https://bluemix.net) avec un plan Pay As You Go
 + Installer la [Bluemix CLI](http://clis.ng.bluemix.net)
 + Installer docker for [Mac](https://docs.docker.com/engine/installation/mac/) or [Windows](https://docs.docker.com/engine/installation/windows/)
 + Installer [Kubectl](https://kubernetes.io/docs/user-guide/prereqs/)
 
 ## 1. Création du cluster kubernetes
-### 1.1 Connexion à Bluemix
-Se connecter à Bluemix en ligne de commande et sélectionner une organisation et un espace.
+### 1.1 Connexion à la console Bluemix
+Se connecter à la console Bluemix (https://console.bluemix.net) et choisir une organisation et un espace.
 
 _NB : sous Windows utiliser le ```Docker QuickStart Terminal``` de l'installation Docker_
 ### 1.2 Création du Cluster Kubernetes
