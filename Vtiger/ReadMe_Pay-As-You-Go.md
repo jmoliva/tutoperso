@@ -34,6 +34,10 @@ Une fois le service de base de données créé, vous devez visualiser votre base
 Nous allons utiliser l'image VTiger 7.0.1 disponible sur DockerHub
 
 ### 4.1 Utiliser des lignes de commande Bluemix et Kubectl
+Se connecter à Bluemix en ligne de commande ```bx login``` et sélectionner une organisation et un espace ```bx target --cf```.
+
+_NB : sous Windows utiliser le ```Docker QuickStart Terminal``` de l'installation Docker_
+
 Mettre à jour la configuration Kubernetes pour pouvoir utiliser la commande ```kubectl``` sur le cluster
 ```
 bx cs cluster-config <cluster-name>
