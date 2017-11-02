@@ -59,6 +59,7 @@ Bluemix     https://plugins.ng.bluemix.net
 3. Il faut ensuite installer les plugins container-registry et container-service:
 
 Le plugin container-registry permet de vous connecter à une registry privée d'images dans Bluemix.
+
 Le plugin container-service vous permet de gérer les clusters et les workers nodes dans Bluemix.
 
 ```
