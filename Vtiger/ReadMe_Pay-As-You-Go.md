@@ -33,10 +33,50 @@ Une fois le service de base de données créé, vous devez visualiser votre base
 ## 4 Déploiement de l'image VTiger
 Nous allons utiliser l'image VTiger 7.0.1 disponible sur DockerHub
 
-### 4.1 Utiliser des lignes de commande Bluemix et Kubectl
-Se connecter à Bluemix en ligne de commande ```bx login``` et sélectionner une organisation et un espace ```bx target --cf```.
+### 4.1 Utilisation de la ligne de commande Bluemix et Kubectl
+Se connecter à Bluemix en ligne de commande ```bx login``` et sélectionner une organisation et un espace ```bx target --cf```
 
 _NB : sous Windows utiliser le ```Docker QuickStart Terminal``` de l'installation Docker_
+
+1. Vérifier que les plugins container-registry et container-service sont installés dans la ligne de commande Bluemix
+
+```bx plugin repos```
+
+Output:
+
+```Listing added plug-in repositories...
+
+Repo Name   URL
+Bluemix     https://plugins.ng.bluemix.net```
+
+2. Si vous ne voyez pas le repository Bluemix, il faut l'installer:
+
+```bx plugin repo-add Bluemix https://plugins.ng.bluemix.net```
+
+To install the Container Service plugin, run the following command:
+
+bx plugin install container-service -r Bluemix
+
+To manage a private image registry, install the Registry plug-in. This plug-in connects to a private image registry Bluemix, where you can store images that can be used to build containers. The prefix for running registry commands is bx cr.
+
+bx plugin install container-registry -r Bluemix
+
+To verify that the plug-in is installed properly, run the following command:
+
+bx plugin list
+
+and both plug-ins are displayed in the results:
+
+Listing installed plug-ins...
+
+Plugin Name          Version
+container-registry   0.1.104
+container-service    0.1.219
+
+To update the container registry plugin
+
+bx plugin update container-registry -r Bluemix
+
 
 Mettre à jour la configuration Kubernetes pour pouvoir utiliser la commande ```kubectl``` sur le cluster
 ```
