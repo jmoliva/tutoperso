@@ -15,9 +15,9 @@ Déploiement d'une image VTiger sur l'environnement Bluemix en utilisant un plan
 ### 1.1 Connexion à la console Bluemix
 Se connecter à la console Bluemix [https://console.bluemix.net](https://console.bluemix.net) et choisir une organisation et un espace.
 
-_NB : sous Windows utiliser le ```Docker QuickStart Terminal``` de l'installation Docker_
 ### 1.2 Création du Cluster Kubernetes
-Créer le cluster kubernetes si vous n'en avait pas déjà créé un (si la commande `bx cs clusters` ne vous retourne aucun cluster)
+Créer un cluster kubernetes.
+![](./images/Cluster creation.png)
 ```
 bx cs cluster-create --name <cluster-name>
 ```
