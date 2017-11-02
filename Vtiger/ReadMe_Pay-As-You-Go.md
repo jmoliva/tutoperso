@@ -12,7 +12,7 @@ Déploiement d'une image VTiger sur l'environnement Bluemix en utilisant un plan
 + Installer [Kubectl](https://kubernetes.io/docs/user-guide/prereqs/)
 
 ## 1 Connexion à la console Bluemix
-Se connecter à la console Bluemix [https://console.bluemix.net](https://console.bluemix.net) et choisir une organisation et un espace.
+Se connecter à la console Bluemix <https://console.bluemix.net> et choisir une organisation et un espace.
 
 ## 2 Création du Cluster Kubernetes
 Créer un cluster kubernetes via la console Bluemix.
