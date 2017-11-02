@@ -20,6 +20,10 @@ Créer un cluster kubernetes.
 
 ![](./images/ClusterCreation.png)
 
+Une fois le cluster créé et instancié vous devez avoir cette vue dans le tableau de bord des clusters
+
+![](./images/ClusterCreation2.png)
+
 ```
 bx cs cluster-create --name <cluster-name>
 ```
