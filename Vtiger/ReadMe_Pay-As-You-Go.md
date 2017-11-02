@@ -30,7 +30,10 @@ Une fois le service de base de données créé, vous devez visualiser votre base
 
 ![](./images/ComposeMySQL.png)
 
-### 1.3 Récupération de la configuration Kubernetes
+## 4 Déploiement de l'image VTiger
+Nous allons utiliser l'image VTiger 7.0.1 disponible sur DockerHub
+
+### 4.1 Utiliser des lignes de commande Bluemix et Kubectl
 Mettre à jour la configuration Kubernetes pour pouvoir utiliser la commande ```kubectl``` sur le cluster
 ```
 bx cs cluster-config <cluster-name>
