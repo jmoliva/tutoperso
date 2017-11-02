@@ -17,7 +17,9 @@ Se connecter à la console Bluemix [https://console.bluemix.net](https://console
 
 ### 1.2 Création du Cluster Kubernetes
 Créer un cluster kubernetes.
+
 ![](./images/Cluster creation.png)
+
 ```
 bx cs cluster-create --name <cluster-name>
 ```
