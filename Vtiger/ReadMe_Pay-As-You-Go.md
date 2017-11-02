@@ -102,7 +102,7 @@ Si vous n'aviez pas déjà (la liste est vide), créé un namespace maintenant
 ```
 bx cr namespace-add <your-namespace>
 ```
-## 2. Récupération et push de l'image Vtiger
+## 4.3. Récupération et push de l'image Vtiger
 On récupère une image docker de la dernière version de VTiger 7.0.1 sur DockerHub <https://hub.docker.com/r/ldavid/vtiger7/>
 ```
 docker pull ldavid/vtiger7
