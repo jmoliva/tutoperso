@@ -38,7 +38,7 @@ Se connecter à Bluemix en ligne de commande ```bx login``` et sélectionner une
 
 _NB : sous Windows utiliser le ```Docker QuickStart Terminal``` de l'installation Docker_
 
-1. Vérifier que les plugins container-registry et container-service sont installés dans la ligne de commande Bluemix
+1. Vérifier que le repository de plugins est installé dans la ligne de commande Bluemix
 
 ```bx plugin repos```
 
@@ -49,17 +49,20 @@ Output:
 Repo Name   URL
 Bluemix     https://plugins.ng.bluemix.net```
 
+
 2. Si vous ne voyez pas le repository Bluemix, il faut l'installer:
 
 ```bx plugin repo-add Bluemix https://plugins.ng.bluemix.net```
 
-To install the Container Service plugin, run the following command:
 
-bx plugin install container-service -r Bluemix
+3. Il faut ensuite installer les plugins container-registry et container-service:
+
+```bx plugin install container-service -r Bluemix
+bx plugin install container-registry -r Bluemix```
 
 To manage a private image registry, install the Registry plug-in. This plug-in connects to a private image registry Bluemix, where you can store images that can be used to build containers. The prefix for running registry commands is bx cr.
 
-bx plugin install container-registry -r Bluemix
+
 
 To verify that the plug-in is installed properly, run the following command:
 
