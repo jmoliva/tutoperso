@@ -124,4 +124,8 @@ registry.ng.bluemix.net/<your-namespace>/vtiger7   <your-namespace>     1       
 ## 3. Création des volumes persistants de stockage pour la base et pour Vtiger
 
 
+Mettre à jour la configuration Kubernetes pour pouvoir utiliser la commande ```kubectl``` sur le cluster
+```
+bx cs cluster-config <cluster-name>
+```
 
