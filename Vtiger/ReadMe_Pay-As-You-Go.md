@@ -11,12 +11,11 @@ Déploiement d'une image VTiger sur l'environnement Bluemix en utilisant un plan
 + Installer docker for [Mac](https://docs.docker.com/engine/installation/mac/) or [Windows](https://docs.docker.com/engine/installation/windows/)
 + Installer [Kubectl](https://kubernetes.io/docs/user-guide/prereqs/)
 
-## 1. Création du cluster kubernetes
-### 1.1 Connexion à la console Bluemix
+## 1 Connexion à la console Bluemix
 Se connecter à la console Bluemix [https://console.bluemix.net](https://console.bluemix.net) et choisir une organisation et un espace.
 
-### 1.2 Création du Cluster Kubernetes
-Créer un cluster kubernetes.
+## 2 Création du Cluster Kubernetes
+Créer un cluster kubernetes via la console Bluemix.
 
 ![](./images/ClusterCreation.png)
 
@@ -24,36 +23,13 @@ Une fois le cluster créé et instancié vous devez avoir cette vue dans le tabl
 
 ![](./images/ClusterCreation2.png)
 
-```
-bx cs cluster-create --name <cluster-name>
-```
-Output:
-```
-OK
-Name         ID                                 State       Created          Workers   Datacenter   Version
-<cluster-name>   ab68df3d7c8045e097651e33fd544731   deploying   11 seconds ago   0         hou02        1.7.4_1502
-```
-Attendre que le cluster soit provisionné. La commande `bs cs workers` permet de lister l'état du cluster et des workers nodes :
-```
-bx cs workers <cluster-name>
-```
-Les différentes sorties sont:
-```
-ID                                                 Public IP   Private IP   Machine Type   State               Status                              Version
-kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   -           -            free           provision_pending   Waiting for master to be deployed   1.7.4_1502
+## 3 Création d'une base compose MySQL
+Provisionner le service **Compose for MySQL** à partir de la page du catalogue de Bluemix ici : <https://console.bluemix.net/catalog/services/compose-for-mysql>
 
-ID                                                 Public IP   Private IP   Machine Type   State          Status                     Version
-kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   -           -            free           provisioning   Provisioning in progress   1.7.4_1502
+Une fois le service de base de données créé, vous devez visualiser votre base MySQL dans le tableau de bord de Bluemix.
 
-ID                                                 Public IP         Private IP     Machine Type   State           Status                    Version
-kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.206   free           bootstrapping   Configuring Kubectl CLI   1.7.4_1502
+![](./images/ComposeMySQL.png)
 
-ID                                                 Public IP         Private IP     Machine Type   State      Status                         Version
-kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.206   free           deployed   Deploy Automation Successful   1.7.4_1502
-
-ID                                                 Public IP         Private IP     Machine Type   State    Status   Version
-kube-hou02-paab68df3d7c8045e097651e33fd544731-w1   184.172.214.129   10.76.92.206   free           normal   Ready    1.7.4_1502
-```
 ### 1.3 Récupération de la configuration Kubernetes
 Mettre à jour la configuration Kubernetes pour pouvoir utiliser la commande ```kubectl``` sur le cluster
 ```
@@ -98,8 +74,5 @@ registry.ng.bluemix.net/<your-namespace>/vtiger7   <your-namespace>     1       
 ```
 ## 3. Création des volumes persistants de stockage pour la base et pour Vtiger
 
-## 4. Création d'une base compose MySQL
-Provisionner le service **Compose for MySQL** à partir de la page du catalogue de Bluemix ici : <https://console.bluemix.net/catalog/services/compose-for-mysql>
 
-![](./images/Test.png)
 
