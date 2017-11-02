@@ -47,7 +47,8 @@ Output:
 ```Listing added plug-in repositories...
 
 Repo Name   URL
-Bluemix     https://plugins.ng.bluemix.net ```
+Bluemix     https://plugins.ng.bluemix.net```
+
 
 
 2. Si vous ne voyez pas le repository Bluemix, il faut l'installer:
