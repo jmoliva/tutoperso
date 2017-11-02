@@ -58,8 +58,10 @@ Bluemix     https://plugins.ng.bluemix.net
 
 3. Il faut ensuite installer les plugins container-registry et container-service:
 
-```bx plugin install container-service -r Bluemix
-bx plugin install container-registry -r Bluemix```
+```
+bx plugin install container-service -r Bluemix
+bx plugin install container-registry -r Bluemix
+```
 
 To manage a private image registry, install the Registry plug-in. This plug-in connects to a private image registry Bluemix, where you can store images that can be used to build containers. The prefix for running registry commands is bx cr.
 
