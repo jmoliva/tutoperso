@@ -41,11 +41,13 @@ _NB : sous Windows utiliser le ```Docker QuickStart Terminal``` de l'installatio
 1. Vérifier que le repository de plugins est installé dans la ligne de commande Bluemix
 
 ```bx plugin repos```
+
 Output:
+
 ```Listing added plug-in repositories...
 
 Repo Name   URL
-Bluemix     https://plugins.ng.bluemix.net```
+Bluemix     https://plugins.ng.bluemix.net ```
 
 
 2. Si vous ne voyez pas le repository Bluemix, il faut l'installer:
