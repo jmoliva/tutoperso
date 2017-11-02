@@ -88,6 +88,7 @@ bx plugin update registry-service -r Bluemix
 Se loguer sur le service de registry de Bluemix
 ```
 bx cr login
+output : Connexion à 'registry.eu-de.bluemix.net'...
 ```
 Vérifier si vous avez déjà définie un namespace dans la registry Bluemix
 ```
