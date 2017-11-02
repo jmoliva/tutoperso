@@ -84,11 +84,6 @@ container-service    0.1.360
 bx plugin update container-registry -r Bluemix
 bx plugin update registry-service -r Bluemix
 ```
-
-Mettre à jour la configuration Kubernetes pour pouvoir utiliser la commande ```kubectl``` sur le cluster
-```
-bx cs cluster-config <cluster-name>
-```
 ### 4.2 Vérification ou création de votre namespace dans la registry Bluemix
 Se loguer sur le service de registry de Bluemix
 ```
