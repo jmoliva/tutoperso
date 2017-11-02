@@ -89,14 +89,14 @@ Mettre à jour la configuration Kubernetes pour pouvoir utiliser la commande ```
 ```
 bx cs cluster-config <cluster-name>
 ```
-### 1.4 Vérification ou création de votre namespace dans la registry Bluemix
+### 4.2 Vérification ou création de votre namespace dans la registry Bluemix
 Se loguer sur le service de registry de Bluemix
 ```
 bx cr login
 ```
 Vérifier si vous avez déjà définie un namespace dans la registry Bluemix
 ```
-bx cr namespace-list
+bx cr namespaces
 ```
 Si vous n'aviez pas déjà (la liste est vide), créé un namespace maintenant
 ```
